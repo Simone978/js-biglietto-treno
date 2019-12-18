@@ -14,14 +14,14 @@ if( isNaN(chilometri) || isNaN(eta)) {
   document.getElementById("avvertenza").innerHTML= "Attenzione, non hai inserito le risposte in modo corretto";
 } else {
 // va applicato uno sconto del 20% per i minorenni e del 40% per gli over 65.
-if (eta < 18) {
-  var prezzoTratta20 = prezzoTratta - prezzoTratta * (20 / 100);
-  document.getElementById('prezzo').innerHTML = "Il tuo biglietto costa " + prezzoTratta20.toFixed(2) + euro;
-} else if (eta > 65) {
-  var prezzoTratta40 = prezzoTratta - prezzoTratta * (40 / 100);
-    document.getElementById('prezzo').innerHTML = "Il tuo biglietto costa " + prezzoTratta40.toFixed(2) + euro;
-} else{
-  prezzoTratta;
-    document.getElementById('prezzo').innerHTML = "Il tuo biglietto costa " + prezzoTratta + euro;
-}
+  if (eta < 18) {
+    var prezzoTratta20 = prezzoTratta - prezzoTratta * (20 / 100);
+    document.getElementById('prezzo').innerHTML = "Il tuo biglietto costa " + prezzoTratta20.toFixed(2) + euro;
+  } else if (eta > 65) {
+    var prezzoTratta40 = prezzoTratta - prezzoTratta * (40 / 100);
+      document.getElementById('prezzo').innerHTML = "Il tuo biglietto costa " + prezzoTratta40.toFixed(2) + euro;
+  } else{
+    prezzoTratta;
+      document.getElementById('prezzo').innerHTML = "Il tuo biglietto costa " + prezzoTratta + euro;
+  }
 }
