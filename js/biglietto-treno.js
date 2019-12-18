@@ -9,3 +9,7 @@ var chilometri = parseInt(prompt("Quanti chilometri vuoi percorrere?"));
 console.log(chilometri);
 var eta = parseInt(prompt("Quanti anni hai?"));
 console.log(eta);
+
+// Il prezzo del biglietto è definito in base ai km (0.21 € al km)
+var prezzoBase = 0.21;
+var prezzoTratta= prezzoBase * chilometri;
